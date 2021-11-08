@@ -29,7 +29,7 @@
   </div>
 </template>
 <script>
-import axios from "axios"
+import axios from "axios";
   export default {
     data(){
       return {
@@ -45,8 +45,11 @@ import axios from "axios"
     },
     methods : {
       onSubmit(){
-        axios.post("https://vuejs-axios-2c23f-default-rtdb.firebaseio.com/",this.post.updatedDate= new Date())
-        // console.log(...this.post,updatedDate:new Date());
+        axios.post("https://vuejs-axios-2c23f-default-rtdb.firebaseio.com/posts.json",this.post.updatedDate= new Date())
+       then(response=>{
+         console.log(reponse)
+       })
+       .catch(e =>console.log(e))
       }
     }
   }

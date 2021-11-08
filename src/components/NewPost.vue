@@ -44,7 +44,7 @@
     },
     methods : {
       onSubmit(){
-        console.log({ ...this.post, updatedDate : new Date()});
+        // console.log({ this.post, updatedDate : new Date()});
       }
     }
   }

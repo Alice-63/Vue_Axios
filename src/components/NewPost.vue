@@ -45,7 +45,7 @@ import axios from "axios";
     },
     methods : {
       onSubmit(){
-        axios.post("https://vuejs-axios-2c23f-default-rtdb.firebaseio.com/posts.json",this.post.updatedDate= new Date())
+        axios.post("https://vuejs-axios-2c23f-default-rtdb.firebaseio.com/posts.json",{...this.post,updatedDate= new Date()})
        then(response=>{
          console.log(reponse)
        })
